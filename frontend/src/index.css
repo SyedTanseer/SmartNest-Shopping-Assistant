@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+  Colour tokens.  Every colour in the interface is one of these, so a theme is just a second set of values.
+    brand        the accent used for text, links and focus rings
+    fill         the solid brand colour behind white text (buttons, bars, the user's chat bubble)
+    surface/card the page's raised layers; subtle/track are quieter fills; tile is always white (product photos)
+  Light is the default.  Dark applies when <html data-theme="dark"> (set from the saved choice, else the system
+  setting) and, as a fallback if scripts are blocked, from prefers-color-scheme.
+*/
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-paper: #faf8f5;
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-subtle: #f5f3ef;
+  --color-track: #e7e2db;
+  --color-tile: #ffffff;
+  --color-ink: #1c1917;
+  --color-muted: #6b6560;
+  --color-line: #e7e2db;
+  --color-brand: #0f766e;
+  --color-brand-dark: #115e59;
+  --color-brand-soft: #e6f4f1;
+  --color-fill: #0f766e;
+  --color-fill-hover: #115e59;
+  --color-ok: #166534;
+  --color-ok-soft: #e8f5ec;
+  --color-warn: #b45309;
+  --color-warn-soft: #fdf1df;
+  --color-bad: #b42318;
+  --color-bad-soft: #fdecea;
+}
+
+:root { color-scheme: light; }
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #12110f;
+  --color-surface: #1a1815;
+  --color-card: #1b1916;
+  --color-subtle: #232019;
+  --color-track: #2f2b24;
+  --color-ink: #ece7de;
+  --color-muted: #a59e92;
+  --color-line: #302c25;
+  --color-brand: #5ccfbf;
+  --color-brand-dark: #94e6da;
+  --color-brand-soft: rgba(92, 207, 191, 0.12);
+  --color-fill: #137a70;
+  --color-fill-hover: #178b80;
+  --color-ok: #7bd498;
+  --color-ok-soft: rgba(123, 212, 152, 0.12);
+  --color-warn: #f0b866;
+  --color-warn-soft: rgba(240, 184, 102, 0.12);
+  --color-bad: #f4928a;
+  --color-bad-soft: rgba(244, 146, 138, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: #12110f;
+    --color-surface: #1a1815;
+    --color-card: #1b1916;
+    --color-subtle: #232019;
+    --color-track: #2f2b24;
+    --color-ink: #ece7de;
+    --color-muted: #a59e92;
+    --color-line: #302c25;
+    --color-brand: #5ccfbf;
+    --color-brand-dark: #94e6da;
+    --color-brand-soft: rgba(92, 207, 191, 0.12);
+    --color-fill: #137a70;
+    --color-fill-hover: #178b80;
+    --color-ok: #7bd498;
+    --color-ok-soft: rgba(123, 212, 152, 0.12);
+    --color-warn: #f0b866;
+    --color-warn-soft: rgba(240, 184, 102, 0.12);
+    --color-bad: #f4928a;
+    --color-bad-soft: rgba(244, 146, 138, 0.12);
+  }
+}
+
+html, body, #root { height: 100%; }
+body {
+  background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: 0.55; }
+:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+::selection { background: var(--color-brand-soft); color: var(--color-ink); }
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--color-track); border-radius: 8px; }
+/* Theme changes fade, but only after the first paint (never a fade-in from white on load). */
+html.theme-ready body { transition: background-color 0.25s ease, color 0.25s ease; }
+html.theme-ready .surface-transition { transition: background-color 0.25s ease, border-color 0.25s ease; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

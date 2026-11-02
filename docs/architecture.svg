@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Inter, Segoe UI, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">SmartNest architecture</title>
+  <desc id="d">React interface calls a FastAPI layer. The Coordinator agent talks to Space Planning, Product Research, Comparison and Budget agents over Ed25519 signed messages. Comparison uses the utility optimizer. Product Research reads real SerpApi snapshots. Gemini parses and rewords chat. MongoDB Atlas stores sessions and caches.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#57534e"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#d6d0c7;stroke-width:1.5}
+      .ui{fill:#e6f4f1;stroke:#0f766e;stroke-width:1.5}
+      .agent{fill:#fdf1df;stroke:#b45309;stroke-width:1.5}
+      .ext{fill:#eef2ff;stroke:#4f46e5;stroke-width:1.5}
+      .db{fill:#ecfdf3;stroke:#15803d;stroke-width:1.5}
+      .sec{fill:none;stroke:#b42318;stroke-width:1.5;stroke-dasharray:7 5}
+      text{fill:#1c1917;font-size:14px}
+      .h{font-weight:700;font-size:15px}
+      .s{font-size:12px;fill:#57534e}
+      .ln{stroke:#57534e;stroke-width:1.6;fill:none}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#faf8f5"/>
+  <text x="30" y="38" class="h" style="font-size:22px">SmartNest — autonomous home furnishing planner</text>
+  <text x="30" y="60" class="s">Python 3.12 · FastAPI · React + Tailwind + Recharts · custom agents · TCP-ready signed messaging · MongoDB Atlas · Gemini · SerpApi</text>
+
+  <!-- UI -->
+  <rect class="ui" x="40" y="90" width="520" height="110" rx="12"/>
+  <text x="60" y="118" class="h">React interface (frontend/)</text>
+  <text x="60" y="140" class="s">Chatbot · room-wise plan with images, prices, retailer links, utility scores</text>
+  <text x="60" y="158" class="s">Budget dashboard (Recharts) · compare + shortlist · agent activity monitor</text>
+  <text x="60" y="176" class="s">Sample-data / unverified-stock labels are always shown</text>
+
+  <!-- API -->
+  <rect class="box" x="40" y="250" width="520" height="90" rx="12"/>
+  <text x="60" y="278" class="h">FastAPI layer (smartnest/api)</text>
+  <text x="60" y="300" class="s">Validation · sessions (event-sourced, replayable) · rate limit · CORS · no secrets in responses</text>
+  <text x="60" y="318" class="s">/sessions  /messages  /events  /rooms  /budget  /compare  /shortlist  /activity</text>
+  <path class="ln" d="M300 200V250" marker-end="url(#a)"/>
+  <text x="310" y="230" class="s">JSON over HTTP</text>
+
+  <!-- Assistant -->
+  <rect class="box" x="40" y="390" width="250" height="100" rx="12"/>
+  <text x="58" y="418" class="h">Chat assistant</text>
+  <text x="58" y="438" class="s">Rule-based intent parser (₹, BHK, lakh…)</text>
+  <text x="58" y="456" class="s">Gemini fallback + rewording,</text>
+  <text x="58" y="474" class="s">rejected if it adds a number</text>
+  <path class="ln" d="M170 340V390" marker-end="url(#a)"/>
+
+  <!-- Gemini -->
+  <rect class="ext" x="40" y="560" width="250" height="70" rx="12"/>
+  <text x="58" y="588" class="h">Gemini</text>
+  <text x="58" y="608" class="s">understands language only; never ranks</text>
+  <path class="ln" d="M165 490V560" marker-end="url(#a)" marker-start="url(#a)"/>
+
+  <!-- Coordinator -->
+  <rect class="agent" x="340" y="390" width="220" height="100" rx="12"/>
+  <text x="358" y="418" class="h">Coordinator agent</text>
+  <text x="358" y="438" class="s">Plan-level BDI: beliefs, desire,</text>
+  <text x="358" y="456" class="s">intentions; retain / replace /</text>
+  <text x="358" y="474" class="s">invalidate on every event</text>
+  <path class="ln" d="M290 440H340" marker-end="url(#a)"/>
+  <path class="ln" d="M450 340V390" marker-end="url(#a)"/>
+
+  <!-- Signed bus -->
+  <rect class="sec" x="600" y="140" width="570" height="410" rx="14"/>
+  <text x="620" y="166" class="h" style="fill:#b42318">Signed message bus: Ed25519, replay guard, roles, audit (5.1)</text>
+  <path class="ln" d="M560 440H620"/>
+
+  <rect class="agent" x="630" y="190" width="240" height="90" rx="12"/>
+  <text x="648" y="218" class="h">Space Planning agent</text>
+  <text x="648" y="238" class="s">2BHK → rooms → items;</text>
+  <text x="648" y="256" class="s">optional room limits, stated assumptions</text>
+
+  <rect class="agent" x="900" y="190" width="240" height="90" rx="12"/>
+  <text x="918" y="218" class="h">Product Research agent</text>
+  <text x="918" y="238" class="s">per-category listings; drops</text>
+  <text x="918" y="256" class="s">accessories (₹499 “fridge”)</text>
+
+  <rect class="agent" x="630" y="320" width="240" height="90" rx="12"/>
+  <text x="648" y="348" class="h">Comparison agent</text>
+  <text x="648" y="368" class="s">UtilityOptimizer per item: hard limits,</text>
+  <text x="648" y="386" class="s">dynamic weights, confirmed / unverified</text>
+
+  <rect class="agent" x="900" y="320" width="240" height="90" rx="12"/>
+  <text x="918" y="348" class="h">Budget agent</text>
+  <text x="918" y="368" class="s">hard ceilings per item, re-sharing,</text>
+  <text x="918" y="386" class="s">greedy leftover fill, analytics</text>
+  <path class="ln" d="M620 440V235H630" />
+  <path class="ln" d="M620 365H630" />
+  <path class="ln" d="M890 440V235H900" />
+  <path class="ln" d="M890 365H900" />
+  <path class="ln" d="M620 440H890" marker-end="url(#a)"/>
+  <text x="640" y="470" class="s">every request and reply is a signed MessageEnvelope; unsigned, forged,</text>
+  <text x="640" y="488" class="s">replayed or unauthorised messages are refused and audited — visible in the Agents tab</text>
+  <text x="640" y="520" class="s">Same router the TCP RemoteAgentServer uses: an agent can move to another machine unchanged.</text>
+
+  <!-- Data -->
+  <rect class="ext" x="900" y="600" width="270" height="110" rx="12"/>
+  <text x="918" y="628" class="h">SerpApi Google Shopping</text>
+  <text x="918" y="648" class="s">real listings captured once (10-request cap),</text>
+  <text x="918" y="666" class="s">cached; the running app makes no request</text>
+  <text x="918" y="684" class="s">no invented attributes: missing stays missing</text>
+
+  <rect class="db" x="600" y="600" width="270" height="110" rx="12"/>
+  <text x="618" y="628" class="h">Catalog snapshots (data/catalog)</text>
+  <text x="618" y="648" class="s">7 categories · retrieval time kept</text>
+  <text x="618" y="666" class="s">simulated samples only if no real data,</text>
+  <text x="618" y="684" class="s">always labelled, never given a buy link</text>
+  <path class="ln" d="M900 655H870" marker-end="url(#a)"/>
+  <path class="ln" d="M1140 235H1158V575H735V600" marker-end="url(#a)"/>
+  <text x="745" y="592" class="s">reads listings</text>
+
+  <rect class="db" x="320" y="600" width="250" height="110" rx="12"/>
+  <text x="338" y="628" class="h">MongoDB Atlas</text>
+  <text x="338" y="648" class="s">home_projects (sessions = request +</text>
+  <text x="338" y="666" class="s">events), search_cache, knowledge,</text>
+  <text x="338" y="684" class="s">BDI agent state</text>
+  <path class="ln" d="M300 340V545H400V600" marker-end="url(#a)"/>
+
+  <text x="40" y="735" class="s">Honesty rules: item budgets are hard ceilings · stock is “confirmed” only if a listing says so · unfilled items are explained, never forced · Gemini never chooses a product, price or budget.</text>
+</svg>

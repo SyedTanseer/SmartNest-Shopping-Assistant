@@ -1,0 +1,379 @@
+{
+ "_note": "Trimmed copy of a REAL SerpApi response (2026-11-01, gl=in, q='3 seater minimalist sofa'). No API key is present in responses.",
+ "search": {
+  "shopping_results": [
+   {
+    "position": 1,
+    "title": "Raynor Seater Wooden Sofa Colour",
+    "product_id": "4546728420898592081",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:4546728420898592081,productid:16635780716345881247,headlineOfferDocid:365413440170953131,imageDocid:13962343158786935853,gpcid:362916895984540482,mid:576462882288884274,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "LjnY-nicJZNJjttWEIaTnCBH6L0hg4_k49ANLUjq",
+    "source": "Urban Ladder",
+    "price": "₹33,999",
+    "extracted_price": 33999,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 2,
+    "title": "Lorenz 3 Seater Sofa (Cotton, Jade Ivory)",
+    "product_id": "10033647480092993200",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=productid:10033647480092993200,headlineOfferDocid:10033647480092993200,imageDocid:4981870736156091937,rds:LO_10033647480092993200|PROD_LO_10033647480092993200,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "lnV-X3icdVBJrqNWFE2ygizhz0suvQcYzP_yAPCj",
+    "source": "Wooden Street",
+    "price": "₹47,999",
+    "extracted_price": 47999,
+    "old_price": "48% off₹91,999",
+    "extracted_old_price": 48,
+    "rating": 4.8,
+    "reviews": 21,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 3,
+    "title": "IKEA EKENÄSET sofa",
+    "product_id": "18362259487400871631",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:18362259487400871631,productid:16399719113058435323,headlineOfferDocid:5903993105414754695,imageDocid:10928672974451809318,rds:PC_11003461722392487214|PROD_PC_11003461722392487214,gpcid:15045402897028869045,mid:576462914700339187,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "VZkYhHicdVPLrqtGFo3yBRn0B5z5la-qipc5Rx4A",
+    "source": "IKEA.in",
+    "price": "₹33,990",
+    "extracted_price": 33990,
+    "rating": 4.8,
+    "reviews": 18
+   },
+   {
+    "position": 4,
+    "title": "Helios by Home Centre Helios Scott Nxt 3-Seater Sofa",
+    "product_id": "588311954290170006",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:588311954290170006,productid:9344186072687984810,headlineOfferDocid:16898230305888883219,imageDocid:41303918439303851,gpcid:2856987278168919110,mid:576462893591390699,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "yr5cJ3icJVPLrqNWEEzyBfmEux95xOHNvfIC8AGD",
+    "source": "Home Centre",
+    "multiple_sources": true,
+    "price": "₹22,999",
+    "extracted_price": 22999
+   },
+   {
+    "position": 5,
+    "title": "AMATA Eagle Solid Wood 3 Seater Sofa Cum Bed Cream Suede Velevt Fabric with Two Cushions Perfect for Home Living Office Room and Guests (Cream, Medium",
+    "product_id": "13843761488244636270",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=productid:13843761488244636270,headlineOfferDocid:13843761488244636270,imageDocid:10420238832845171030,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "rX5OhnicdY9LjqNWFIaTrCBLqHmL1uVtV8kDwBcM",
+    "source": "Amazon.in",
+    "price": "₹15,009",
+    "extracted_price": 15009,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 6,
+    "title": "Modern minimal style",
+    "product_id": "12368423766077368137",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:12368423766077368137,productid:10150661139875841476,headlineOfferDocid:16497297872523014289,imageDocid:2235234081739397920,gpcid:995407906390727880,mid:576462531194412519,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "IIaa7nicJVPLrqNWEEzyBfmEux95dA5Pc6-8AHzA",
+    "source": "On Wood Products",
+    "price": "₹74,999",
+    "extracted_price": 74999,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 7,
+    "title": "Vetra Seater Leather Sofa Colour",
+    "product_id": "9381084866667239959",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:9381084866667239959,productid:5025574590859117898,headlineOfferDocid:3428104991300419853,imageDocid:2072845463374287745,gpcid:9123963073025248203,mid:576462848409478879,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "8eo-2nicJVNLkqNWELR9Ah-h9xOaePyhO7QA9EAg",
+    "source": "Urban Ladder",
+    "price": "₹89,999",
+    "extracted_price": 89999,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 8,
+    "title": "Wakefit Miami Seater Sofa",
+    "product_id": "11770780959346199436",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:11770780959346199436,productid:4083950569275391119,headlineOfferDocid:11056972585268814482,imageDocid:2332890016830651043,rds:PC_13693221000966059960|PROD_PC_13693221000966059960,gpcid:13693221000966059960,mid:576462890532446014,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "nyPj4XicdVPLkqNWEnX4C7yYD6h9hzru5SmqohY8",
+    "source": "Wakefit",
+    "multiple_sources": true,
+    "price": "₹18,628",
+    "extracted_price": 18628,
+    "rating": 3.7,
+    "reviews": 130,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 9,
+    "title": "Modern Minimalistic 3 Seater Sofa",
+    "product_id": "9818439911601106648",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=productid:9818439911601106648,headlineOfferDocid:9818439911601106648,imageDocid:11789318679545097944,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "yc_G5nicbZTNjqNGFIWTPEEeofcjjyh-Tbe8AFxg",
+    "source": "BuildHUB",
+    "price": "₹55,100",
+    "extracted_price": 55100,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 10,
+    "title": "Minimalist Chenille 3-Seater Modular Sofa with Adjustable Backrest",
+    "product_id": "9240170656712406296",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:9240170656712406296,productid:12854896180147182283,headlineOfferDocid:16339602775291058192,imageDocid:14601335534514381809,gpcid:7929989609148253922,mid:576462915610843053,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "u9iK1nicLZPLjqNWEIaTPEEeofcjjzjAAdMtLwAf",
+    "source": "SofaNest",
+    "price": "₹2,36,886",
+    "extracted_price": 236886,
+    "delivery": "Free delivery"
+   },
+   {
+    "position": 11,
+    "title": "Torque - Celina Premium Fabric 3 Seater Sofa Set for Living Room- White | Modern Three Seater Couch with 2 Cushions |Modular Sofa 3 Seater for Office",
+    "product_id": "14139916391900419785",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=productid:14139916391900419785,headlineOfferDocid:14139916391900419785,imageDocid:3190793612216793847,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "9uOmenicdZHJjqNmFIWTPEEeofYtWvyMpkpeAP6Z",
+    "source": "amazon.in",
+    "price": "₹20,899",
+    "extracted_price": 20899
+   },
+   {
+    "position": 12,
+    "title": "Raya 3 Seater Minimalist Modern Sofa Fabric",
+    "product_id": "15831199669609165286",
+    "product_link": "https://www.google.com/search?ibp=oshop&q=3 seater minimalist sofa&prds=catalogid:15831199669609165286,productid:3910466567177165227,headlineOfferDocid:17421663325729984369,imageDocid:13687968533542619938,gpcid:147607003695869211,mid:576462891873762545,pvt:hg&hl=en&gl=in&udm=28",
+    "immersive_product_page_token": "-GpK6XicLVPJrqNWFEzyBfmEt2-5xWW4mPfkBcMF",
+    "source": "iFUR",
+    "price": "₹88,999",
+    "extracted_price": 88999,
+    "delivery": "Free delivery"
+   }
+  ]
+ },
+ "details": [
+  {
+   "product_results": {
+    "title": "Helios by Home Centre Helios Scott Nxt 3-Seater Sofa",
+    "brand": "Home Centre",
+    "price_range": "₹22,999-₹22,999",
+    "stores": [
+     {
+      "name": "Home Centre",
+      "link": "https://www.homecentre.in/in/en/Living-Room/Sofas/3-Seater-Sofas/HOMECENTRE-Helios-Scott-Nxt-Fabric-3-Seater-Sofa--Beige/p/1000010948906?srsltid=AYCX9vJbZOK9cIr4b-DAminEJaA3rSHJ1gPHW2YApPFFUH5DlQROHCLfEQU",
+      "title": "Helios by Home Centre - Helios Scott Nxt 3-Seater Sofa - Fabric Sofa | Beige Couch | Comfortable Seating | Solid Wood Frame Sofa - Beige",
+      "rating": 4.7,
+      "reviews": 17,
+      "tag": "Best price",
+      "details_and_offers": [
+       "In stock online",
+       "Delivery ₹99",
+       "30-day returns"
+      ],
+      "price": "₹22,999",
+      "extracted_price": 22999,
+      "shipping": "+ ₹99",
+      "shipping_extracted": 99,
+      "total": "₹23,098",
+      "extracted_total": 23098
+     },
+     {
+      "name": "amazon.in",
+      "link": "https://www.amazon.in/Home-Centre-Helios-Pinewood-Seater/dp/B09T5QXYMV",
+      "title": "Home Centre Helios Scott NXT Beige Pinewood 3 Seater Sofa - 189cm",
+      "rating": 4.1,
+      "reviews": 1520,
+      "details_and_offers": [
+       "In stock online"
+      ],
+      "price": "₹22,999",
+      "extracted_price": 22999,
+      "original_price": "₹38,332.00",
+      "extracted_original_price": 38332.0,
+      "additional_costs": "+delivery",
+      "total": "₹22,999",
+      "extracted_total": 22999
+     }
+    ],
+    "about_the_product": {
+     "title": "Buy Helios Scott Nxt Fabric 3-Seater Sofa - Beige from Helios by Home Centre at just INR 38332.0",
+     "displayed_link": "homecentre.in",
+     "features": [
+      {
+       "title": "Material",
+       "value": "Leather"
+      },
+      {
+       "title": "Brand",
+       "value": "Home Centre"
+      },
+      {
+       "title": "Frame Material",
+       "value": "Wood"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "product_results": {
+    "title": "AMATA Eagle Solid Wood 3 Seater Sofa Cum Bed Cream Suede Velevt Fabric with Two Cushions Perfect for Home Living Office Room and Guests (Cream, Medium",
+    "brand": "Amata",
+    "stores": [
+     {
+      "name": "Amazon.in",
+      "link": "https://www.amazon.in/AMATA-Cushions-Perfect-Living-Guests/dp/B0B68W5TBN?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A2CQBN43Y3Q9MW",
+      "title": "AMATA Eagle Solid Wood 3 Seater Sofa Cum Bed Cream Suede Velevt Fabric with Two Cushions Perfect for Home Living Office Room and Guests (Cream, Medium",
+      "details_and_offers": [
+       "In stock online",
+       "Free delivery",
+       "10% Upto ₹1,750: HDFC Bank CC & EASYEMI trxns (MOV: ₹2,490)"
+      ],
+      "price": "₹15,009",
+      "extracted_price": 15009,
+      "shipping": "Free",
+      "total": "₹15,009",
+      "extracted_total": 15009
+     }
+    ],
+    "about_the_product": {
+     "features": [
+      {
+       "title": "Material",
+       "value": "Fabric"
+      },
+      {
+       "title": "Reclining",
+       "value": "Yes"
+      },
+      {
+       "title": "Sleeper",
+       "value": "Yes"
+      },
+      {
+       "title": "Brand",
+       "value": "Amata"
+      },
+      {
+       "title": "Fabric Type",
+       "value": "Velvet"
+      },
+      {
+       "title": "Mattress Type",
+       "value": "Foam"
+      },
+      {
+       "title": "With Storage",
+       "value": "Yes"
+      },
+      {
+       "title": "Frame Material",
+       "value": "Wood"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "product_results": {
+    "title": "Wakefit Miami Seater Sofa",
+    "brand": "Wakefit",
+    "reviews": 130,
+    "rating": 3.7,
+    "price_range": "₹18,228-₹18,628",
+    "stores": [
+     {
+      "name": "Wakefit",
+      "link": "https://www.wakefit.co/sofa-set/miami-sofa/WSFAMIMN3FOGR?srsltid=AYCX9vLbF1csax1F-fKGC0C2XfbzEqpremKvlBYuYfmTF9hzDDZSH51IVJw",
+      "title": "Wakefit Miami Sofa | Three Seater | Omega Grey Color Fabric",
+      "rating": 2.4,
+      "reviews": 49,
+      "tag": "Most popular",
+      "details_and_offers": [
+       "In stock online",
+       "Free delivery"
+      ],
+      "price": "₹18,628",
+      "extracted_price": 18628,
+      "shipping": "Free",
+      "total": "₹18,628",
+      "extracted_total": 18628
+     },
+     {
+      "name": "amazon.in",
+      "link": "/goto?url=CAESgwEB6zswFc4VnZVqLBd6dSWCNJaXjT3-aV0Qa9TC-9hBuIuDq_m49-1vuJ2GzjdKFA7OiZ_-r-WqFmjCsCDC1ww7M5MnoD7neBq1_Ia1oIhBl0SkB1OTw2cvHODF3DWAgA41nYG20x1pdVkjU0vm62QtGAuUQ2ZQaC0mbGrDSzX1Gw8vWg",
+      "title": "Wakefit Sofa Set | 3 Year Warranty | Sofa 2 Seater, 2 Seater Sofa for Living Room, Wooden Sofa Set, Couch Sofa for Living Room - Miami(Tahoe : ",
+      "rating": 4.1,
+      "reviews": 1520,
+      "tag": "Best price",
+      "details_and_offers": [
+       "In stock online"
+      ],
+      "price": "₹18,228",
+      "extracted_price": 18228,
+      "additional_costs": "+delivery",
+      "total": "₹18,228",
+      "extracted_total": 18228
+     },
+     {
+      "name": "Flipkart",
+      "link": "https://www.flipkart.com/wakefit-fabric-3-seater-sofa/p/itm2b2aeeb625f6e?pid=SOFG9YHVDZYW7GPU&lid=LSTSOFG9YHVDZYW7GPUZYA4M3&marketplace=FLIPKART&cmpid=content_sofa-sectional_8965229628_gmc",
+      "title": "Wakefit Fabric 3 Seater Sofa",
+      "details_and_offers": [
+       "In stock online",
+       "Free delivery"
+      ],
+      "price": "₹18,628",
+      "extracted_price": 18628,
+      "shipping": "Free",
+      "total": "₹18,628",
+      "extracted_total": 18628
+     }
+    ],
+    "stores_next_page_token": "pcWLfXica15aklmSk7ozPDE7NS2zRME3MzE3UyE4NbEktUghOD8tcUlxflEm8-LcvHwuAJi0EWQ",
+    "about_the_product": {
+     "description": "Upgrade your living space with Wakefit's premium range of sofas, designed to bring together unmatched comfort and contemporary style. Built with high-quality materials, including termite-resistant neem wood, plush foam seating, and durable upholstery, these sofas ensure long-lasting performance without compromising on elegance. With ergonomic support, superior craftsmanship, and a focus on functionality, they redefine relaxation and aesthetics. Bring home a Wakefit sofa and experience the perfect balance of comfort and sophistication.",
+     "features": [
+      {
+       "title": "Material",
+       "value": "Fabric"
+      },
+      {
+       "title": "Brand",
+       "value": "Wakefit"
+      },
+      {
+       "title": "Frame Material",
+       "value": "Wood"
+      }
+     ]
+    },
+    "ratings": [
+     {
+      "stars": 1,
+      "amount": 13
+     },
+     {
+      "stars": 2,
+      "amount": 3
+     },
+     {
+      "stars": 3,
+      "amount": 47
+     },
+     {
+      "stars": 4,
+      "amount": 15
+     },
+     {
+      "stars": 5,
+      "amount": 52
+     }
+    ],
+    "user_reviews": [
+     {
+      "title": "Not proper cushion at back rest area",
+      "text": "Sofa is good, built quality is good everything is good but it’s not a chair that you provide bare minimum cushions at back rest area. Providing pillows doesn’t resolve the problem because with the pillow it’s not comfortable to sit long, with pillows it reduces thighs support and it’s feels uncomfortable and to get comfortable we remove pillows and there is almost no cushion an back rest are so it’s feels like chair so please provide a cushion such a way that there should not be a hard touch.",
+      "user_name": "Ashish nagar NAGAR",
+      "source": "wakefit.co",
+      "rating": 2,
+      "date": "4 months ago",
+      "icon": "https://lh3.googleusercontent.com/shsm/AGYqVK2RW7US78zaeC8kwtLP6UNytJQJV-t6AoSU-BG4VHBEv4qFWPlBMhNLkJYCNLbAiFwJ6A=w40-h40-c0x00000000-cc"
+     }
+    ]
+   }
+  }
+ ]
+}

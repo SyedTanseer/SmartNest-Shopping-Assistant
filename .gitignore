@@ -1,0 +1,45 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Packaging / editable-install metadata
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment (keep .env.example)
+.env
+
+# Generated output
+worker_metrics.csv
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# SerpApi local usage counter
+backend/.serpapi_usage.json
+
+# Agent private keys (Assignment 5.1): never commit
+backend/keys/
+*.pem
+# backend/data/ (saved product snapshots) is committed: the Vercel deployment builds from GitHub and needs it
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/e2e/shots/
+docs/demo/*.webm
+frontend/e2e/_video/
+
+# Scratch folder with API test scripts (contains a key): never commit
+New folder (17)/
+New folder*/

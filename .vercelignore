@@ -1,0 +1,17 @@
+# Files that must never be uploaded to Vercel (secrets, scratch work, tests, big media).
+# backend/data (the saved real product snapshots) is deliberately NOT listed: it is git-ignored but the deployed app needs it.
+.git
+.env
+backend/.env
+backend/keys
+*.pem
+New folder*
+node_modules
+frontend/node_modules
+frontend/dist
+frontend/e2e
+docs
+backend/tests
+backend/.serpapi_usage.json
+backend/worker_metrics.csv
+**/__pycache__

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartnest"
+version = "0.1.0"
+description = "SmartNest — Autonomous Home Planning and Product Selection Assistant"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "pydantic>=2.5",
+    "pymongo>=4.7",
+    "python-dotenv>=1.0",
+    "google-genai>=2.0",
+    "httpx>=0.27",
+    "cryptography>=42",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+smartnest = "main:run"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
+markers = [
+    "atlas: needs a live MongoDB Atlas connection (skipped unless SMARTNEST_RUN_ATLAS_TESTS=1)",
+    "live: needs a real Gemini API key and network access (skipped unless SMARTNEST_RUN_LIVE_TESTS=1)",
+    "serpapi_live: needs SERPAPI_API_KEY and network access (skipped unless SMARTNEST_RUN_SERPAPI_TESTS=1)",
+]
